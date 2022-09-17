@@ -1,0 +1,40 @@
+Chat List|Чат Список
+Message id|Номер Листа
+User Name|Ім`я користувача
+Title|Заголовок
+Message|Повідомлення
+Created At|Дата створення
+Message length must be not less then 2 characters!|Повідомлення має містити мінімум 2 символи!
+Name must be from 2 to 140 chars!|Ім`я має бути від 2 до 140 символів!
+Title must be from 10 to 140 chars!|Заголовок має бути від 10 до 140 символів!
+Username be from 3 to 30 chars!|Ім`я має бути від 3 до 30 символів!
+Password be from 5 to 30 chars!|Пароль має бути від 5 до 30 символів!
+Enter correct email!|Введіть коректну пошту!
+Passwords do not match!|Паролі не співпадають!
+User with this username already exists|Користувач із цим іменем вже існує
+User with this email already exists|Користувач із цією поштою вже існує
+Add message|Додати повідомлення
+Delete|Видалити
+Edit|Редагувати
+Save|Зберегти
+Cancel|Скасувати
+Delete message|Видалити повідомлення
+Are you sure?|Ви впевнені?
+Edit message|Редагувати повідомлення
+Home|Головна
+Add|Додати
+Contacts|Контакти
+Not Exists|Тут нічого нема
+Login|Вхід
+Register|Реєстрація
+Username|Ім`я користувача
+Email|Пошта
+User email|Пошта
+Password|Пароль
+Repeat password|Повторіть пароль
+Go to main page|На головну
+Oleny Kul'chyts'koi St, 3/5, Ternopil, Ternopil Oblast, 46002|вул. Олени Кульчицької, 3/5, Тернопіль, Тернопільська область, 46002
+Restrict|Обмеження
+Role|Роль
+Edit user|Редагувати користувача
+User id|Ідентифікатор

@@ -1,0 +1,184 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 60px;
+}
+
+.site-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #117a8b
+}
+
+.site-header {
+	background-color: #117a8b;
+	padding: 10px 0;
+}
+
+.site-nav {
+	background-color: #eee;
+	padding: 5px 0;
+}
+
+.site-content {
+	padding: 10px 0;
+}
+
+ul>li {
+	display: flow-root;
+}
+
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.empty-list-text {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.nav-item .btn {
+	color: rgb(39, 39, 39);
+}
+
+.selected {
+	font-weight: 600;
+	color: rgb(0, 0, 0);
+}
+
+.forgot-password-block {
+	margin-top: 10px;
+}
+
+
+.list-group-item {
+	margin-top: 5px;
+}
+
+.form-paginator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding-top: 16px;
+}
+
+.nav-btn-link {
+	cursor: pointer;
+	color: #0069d9!important;
+	border: 2px solid #0069d9;
+	border-radius: 4px;
+	padding: 2px 6px 5px;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.nav-btn-link:hover {
+	text-decoration: none;
+}
+
+.nav-btn-selected {
+		font-size: 18px;
+	background-color: #0062cc;
+}
+
+.pages-error-message {
+	font-size: 22px;
+}
+
+.controller-select-field {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	border-radius: 7px;
+}
+
+.list-group-item-roles {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.control-panel {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.control-user-role-list {
+	padding: 5px;
+	cursor: pointer;
+}
+
+.roles-table{
+	min-width: 700px;
+	border: 20px;
+	text-align: center;
+	margin: 20px auto;
+	border: 1px solid #ebebe0;
+}
+
+.roles-table-row-data, .roles-table-row-head {
+	min-width: 50px;
+	padding: 8px;
+}
+
+.table-head-row {
+	color: white;
+	text-align: center;
+	background: #117a8b;
+}
+
+.roles-table-row:nth-child(2n) {
+	background: #ebebe0;
+}
+
+.role-permissions-list {
+	min-width: 272px;
+	min-height: 200px;
+}
+
+.role-permission-item{
+	padding: 4px;
+}
+
+.role-permission-item[selected] {
+	background: #61A6EB;
+	color: white;
+}
+
+
+.short-text {
+	max-width: 400px;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-ms-line-clamp: 3;
+	-webkit-line-clamp: 3;
+	line-clamp: 2;
+	display: -webkit-box;
+	display: box;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.nav-display {
+	display: block!important;
+}
+
+.pagination-pages-list {
+	margin: 0;
+	padding: 0;
+}
