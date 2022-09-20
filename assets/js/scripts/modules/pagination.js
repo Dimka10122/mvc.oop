@@ -1,12 +1,12 @@
 define(['assets/js/scripts/lib/knockout'], function (ko) {
     return function (items) {
         let viewModel = {
-            allMessages: ko.observableArray(items),
+            allItems: ko.observableArray(items),
             pagesCountArray: ko.observableArray([]),
             currentPage: ko.observable(0),
-            messagesPerPage: ko.observable(4),
+            itemsPerPage: ko.observable(4),
             startIndex: ko.observable(0),
-            currentMessages: ko.observableArray([]),
+            currentItems: ko.observableArray([]),
             nextPage: function () {
                 if (this.currentPage() >= this.pagesCountArray().length) {
                     this.currentPage(this.pagesCountArray().length);
@@ -28,25 +28,25 @@ define(['assets/js/scripts/lib/knockout'], function (ko) {
             showNextLink:  ko.observable(true)
         }
 
-        viewModel.currentPage.subscribe(function (messages) {
+        viewModel.currentPage.subscribe(function (items) {
             changeStartIndex.bind(viewModel)();
-            currentPageMessages.bind(viewModel)();
+            currentPageItems.bind(viewModel)();
             showLinks.bind(viewModel)()
         })
         viewModel.currentPage(1);
 
         changePagesCount.bind(viewModel)();
 
-        function currentPageMessages() {
-            this.currentMessages(this.allMessages().slice(this.startIndex(), this.startIndex() + this.messagesPerPage()));
+        function currentPageItems() {
+            this.currentItems(this.allItems().slice(this.startIndex(), this.startIndex() + this.itemsPerPage()));
         }
 
         function changeStartIndex() {
-            this.startIndex(this.currentPage() * this.messagesPerPage() - this.messagesPerPage());
+            this.startIndex(this.currentPage() * this.itemsPerPage() - this.itemsPerPage());
         }
 
         function changePagesCount() {
-            let pagesCount = Math.ceil(this.allMessages().length / this.messagesPerPage());
+            let pagesCount = Math.ceil(this.allItems().length / this.itemsPerPage());
             let resultArray = [];
             for (let i = 1; i <= pagesCount; i++) {
                resultArray.push(i);

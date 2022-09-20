@@ -21,24 +21,24 @@
         <div class="col-auto d-flex flex-column input-group">
             <label>
                 <h5>Title</h5>
-                <input value="<?= $pageData["page_title_data"]?>"
-                       name="page_title_data"
+                <input value="<?= $pageData["title"]?>"
+                       name="title"
                        class="form-control"
                        placeholder="Enter Title"/>
             </label>
             <label>
                 <h5>Url Key</h5>
-                <input value="<?= $pageData["page_url_key_data"]?>"
-                       name="page_url_key_data"
+                <input value="<?= $pageData["url_key"]?>"
+                       name="url_key"
                        class="form-control"
                        placeholder="Enter Url Key"/>
             </label>
             <label>
                 <h5>Content</h5>
-                <textarea name="page_content_data"
+                <textarea name="content"
                           class="form-control"
                           rows="15"
-                          placeholder="Enter Content"><?= $pageData['page_content_data']?></textarea>
+                          placeholder="Enter Content"><?= $pageData['content']?></textarea>
             </label>
 
         </div>

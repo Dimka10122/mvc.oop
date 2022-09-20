@@ -6,14 +6,6 @@
 <form method="post">
     <div class="row m-3 align-items-start">
         <div class="col-auto">
-            <label class="col-form-label" for="messageName"><?= __('User Name') ?></label>
-        </div>
-        <div class="col-auto">
-            <input class="form-control" id="messageName" name="name" value="<?= $fields['name'] ?>">
-        </div>
-    </div>
-    <div class="row m-3 align-items-start">
-        <div class="col-auto">
             <label class="col-form-label" for="messageName"><?= __('Title') ?></label>
         </div>
         <div class="col-auto">

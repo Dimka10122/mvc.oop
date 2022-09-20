@@ -40,5 +40,3 @@ class Delete implements \toHtml
         include('View/Base/v_footer.php');
     }
 }
-
-?>

@@ -31,9 +31,9 @@ class Pages
 
     public function createPage(array $pageData): void
     {
-        $title = htmlspecialchars(trim($pageData['page_title_data']));
-        $content = htmlspecialchars(trim($pageData['page_content_data']));
-        $urlKey = htmlspecialchars(trim($pageData['page_url_key_data']));
+        $title = htmlspecialchars(trim($pageData['title']));
+        $content = htmlspecialchars(trim($pageData['content']));
+        $urlKey = htmlspecialchars(trim($pageData['url_key']));
         $matches = [];
         $validateUrlKey = preg_match("/((\w?)*_?(\w?)*)/", "$urlKey", $matches);
 
@@ -47,9 +47,9 @@ class Pages
 
     public function editPage(array $pageData, int $id): void
     {
-        $title = htmlspecialchars(trim($pageData['page_title_data']));
-        $content = htmlspecialchars(trim($pageData['page_content_data']));
-        $urlKey = htmlspecialchars(trim($pageData['page_url_key_data']));
+        $title = htmlspecialchars(trim($pageData['title']));
+        $content = htmlspecialchars(trim($pageData['content']));
+        $urlKey = htmlspecialchars(trim($pageData['url_key']));
 
         $sql = "UPDATE pages SET title = :title, content = :content, url_key = :url_key WHERE id = :id";
         $query = $this->connect->prepare($sql);
@@ -63,9 +63,9 @@ class Pages
     public function validateContent(array &$fields): array
     {
         $errors = [];
-        $title = htmlspecialchars(trim($fields['page_title_data']));
-        $urlKey = htmlspecialchars(trim($fields['page_url_key_data']));
-        $content = htmlspecialchars(trim($fields['page_content_data']));
+        $title = htmlspecialchars(trim($fields['title']));
+        $urlKey = htmlspecialchars(trim($fields['url_key']));
+        $content = htmlspecialchars(trim($fields['content']));
 
         if (strlen($title) <= 4 || strlen($title) >= 150) {
             $errors[] = "Title length must be from 4 to 150 chars!";
@@ -80,11 +80,12 @@ class Pages
         return $errors;
     }
 
-    public function getPageData(string $urlKey): array
+    public function getPageData(string $urlKey, int $urlId = -1): array
     {
-        $sql = "SELECT * FROM pages WHERE url_key = :url_key";
+        $sql = "SELECT * FROM pages WHERE url_key = :url_key OR id = :id";
         $query = $this->connect->prepare($sql);
         $query->bindParam(':url_key', $urlKey);
+        $query->bindParam(':id', $urlId);
         $query->execute();
         return $query->fetchAll(\PDO::FETCH_ASSOC);
     }

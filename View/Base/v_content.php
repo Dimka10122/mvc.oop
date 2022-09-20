@@ -105,7 +105,7 @@ $userInfoClass = new Model\Includes\UserInfo();
     </div>
 </nav>
 
-<!--<script src="assets/js/scripts/modules/dropdown.js"></script>-->
+<script src="assets/js/scripts/modules/dropdown.js"></script>
 
 <div class="site-content">
     <div class="container">

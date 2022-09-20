@@ -18,26 +18,26 @@ class EditPage implements \toHtml
         $this->pagesClass = new \Model\Pages();
         $this->title = __('Edit Page');
 
-        $this->setPageData();
+        $this->setPageDataAction($routerRes);
         $this->EditPageAction($routerRes);
     }
 
-    public function setPageData(): void
+    public function setPageDataAction($routerRes): array
     {
-        $this->pageData = $_POST;
+        $pageUrlId = $routerRes['params']['id'];
+        return $this->pagesClass->getPageData('', $pageUrlId)[0] ?? [];
     }
 
     public function EditPageAction($routerRes) : void
     {
         $id = $routerRes['params']['id'];
-        $neededFieldsArray = ['page_title_data', 'page_url_key_data', 'page_content_data'];
-
+        $neededFieldsArray = ['title', 'url_key', 'content'];
         /** extract */
         $this->fields = extractFields($_POST, $neededFieldsArray);
 
         /** validate */
         $this->contentValidate = $_POST ? $this->pagesClass->validateContent($this->fields) : [];
-
+        $this->pageData = $_POST ? $this->fields : $this->setPageDataAction($routerRes);
         if (isset($_POST['page_action']) && empty($this->contentValidate)) {
             $this->pagesClass->editPage($this->fields, $id);
             header('Location: ' . HOST . BASE_URL . 'pages');

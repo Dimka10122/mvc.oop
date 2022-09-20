@@ -40,11 +40,11 @@ class Messages
         return $query->fetchAll(\PDO::FETCH_ASSOC);
     }
 
-    public function setMessage(array $fields): bool
+    public function setMessage(array $fields, string $username): bool
     {
         $sql = "INSERT into messages VALUES (null, :name, :title, :message, now(), '0')";
         $query = $this->connect->prepare($sql);
-        $query->bindParam(':name', $fields['name']);
+        $query->bindParam(':name', $username);
         $query->bindParam(':title', $fields['title']);
         $query->bindParam(':message', $fields['message']);
         $query->execute();

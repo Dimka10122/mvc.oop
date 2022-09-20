@@ -56,6 +56,15 @@ class Authorize
         return $errors;
     }
 
+    public function fetchUserData(string $username, string $email = '') {
+        $sql = "SELECT * FROM users WHERE login = :login OR email = :email";
+        $query = $this->connect->prepare($sql);
+        $query->bindParam(':login', $username);
+        $query->bindParam(':email', $email);
+        $query->execute();
+        return $query->fetch(\PDO::FETCH_ASSOC);
+    }
+
     public function registerUser(array $fields): array
     {
         $errors = [];
@@ -64,28 +73,20 @@ class Authorize
         $password = htmlspecialchars($fields['password']);
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-        $userData = $this->isExistsUser($username, $email);
+        $userData = $this->fetchUserData($username, $email);
 
-        if (isset($userData)) {
-            $errors = $this->existUserErrors($userData, $fields);
-        } elseif ($userData == null) {
-            $sql = "INSERT INTO users (email, login, password, role) VALUES (:email, :login, :password, 3)";
-            $query = $this->connect->prepare($sql);
-            $query->bindParam(':email', $email);
-            $query->bindParam(':login', $username);
-            $query->bindParam(':password', $hashedPassword);
-            $query->execute();
-        };
-        return $errors;
-    }
+        if ($userData) {
+            return $this->existUserErrors($userData, $fields);
+        }
 
-    public function fetchUserData(string $username, string $email = '') {
-        $sql = "SELECT * FROM users WHERE login = :login OR email = :email";
+        $sql = "INSERT INTO users (email, login, password, role) VALUES (:email, :login, :password, 2)";
         $query = $this->connect->prepare($sql);
-        $query->bindParam(':login', $username);
         $query->bindParam(':email', $email);
+        $query->bindParam(':login', $username);
+        $query->bindParam(':password', $hashedPassword);
         $query->execute();
-        return $query->fetch(\PDO::FETCH_ASSOC);
+
+        return $errors;
     }
 
     public function bindLoggedUser(array $userInfo, array $fields): void

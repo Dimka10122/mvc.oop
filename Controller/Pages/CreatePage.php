@@ -23,7 +23,7 @@ class CreatePage implements \toHtml
     public function createPageAction(): void
     {
         /** ??? */
-        $neededFieldsArray = ['page_title_data', 'page_url_key_data', 'page_content_data'];
+        $neededFieldsArray = ['title', 'url_key', 'content'];
 
         /** extract */
         $this->pageData = extractFields($_POST, $neededFieldsArray);
@@ -33,6 +33,8 @@ class CreatePage implements \toHtml
 
         if (isset($_POST['page_action']) && empty($this->contentValidate)) {
             $this->pagesClass->createPage($this->pageData);
+            header('Location: ' . HOST . BASE_URL . 'pages');
+            exit;
         }
     }
 

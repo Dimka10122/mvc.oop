@@ -15,7 +15,7 @@ class Admin
         $this->connect = $this->db->connect;
     }
 
-    public function getUsers(int $offset, int $currentPage, int &$pagesNum, string $currentUser): array
+    public function getUsers(string $currentUser): array
     {
 //        $sql = "UPDATE users SET password = :password WHERE login = :login";
 //        $query = $this->connect->prepare($sql);
@@ -98,7 +98,7 @@ class Admin
         return $errors;
     }
 
-    public function checkUserExistByEmail(array $existUserData, array &$errors): mixed
+    public function checkUserExistByEmail(array $existUserData, array &$errors)
     {
         if ( $existUserData == null ) {
             $errors[] = 'User with this email does not exist';
@@ -140,7 +140,7 @@ class Admin
         $jsonPerms = json_encode($permissions);
         $sql = "INSERT INTO roles (role_name, permissions) VALUES (:role_name, :permissions)";
         $query = $this->connect->prepare($sql);
-        $query->bindParam(':role_name', $roleName, \PDO::PARAM_INT);
+        $query->bindParam(':role_name', $roleName);
         $query->bindParam(':permissions', $jsonPerms);
         $query->execute();
     }
@@ -186,7 +186,7 @@ class Admin
         if ($roleNameLen <= 3 || $roleNameLen >= 30) {
             $errors[] = "Role name must be from 3 to 30 chars!";
         }
-        if ($permsLen <= 0) {
+        if ($permsLen < 1) {
             $errors[] = "Select at least one permission";
         }
         return $errors;

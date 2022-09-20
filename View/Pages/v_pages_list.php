@@ -41,12 +41,7 @@ $userInfo = new \Model\Includes\UserInfo();
                 <?php if ($userInfo->canUser('control_pages')) : ?>
                     <td class="roles-table-row-data">
                         <a class="btn btn-danger" href="<?=BASE_URL?>pages<?=BASE_URL . $pages["id"] . BASE_URL?>delete" >Delete</a>
-                        <form action="<?=BASE_URL?>pages<?= BASE_URL . $pages["id"] . BASE_URL?>edit" method="POST">
-                            <input type="hidden" name="page_id_data" value="<?= $pages["id"]?>">
-                            <input type="hidden" name="page_title_data" value="<?= $pages["title"]?>">
-                            <input type="hidden" name="page_url_key_data" value="<?= $pages["url_key"]?>">
-                            <button class="btn btn-primary" name="edit_page" type="submit">Edit</button>
-                        </form>
+                        <a class="btn btn-primary" href="<?=BASE_URL?>pages<?= BASE_URL . $pages["id"] . BASE_URL?>edit">Edit</a>
                     </td>
                     <td class="roles-table-row-data">
                         <div class="admin-roles-controller">

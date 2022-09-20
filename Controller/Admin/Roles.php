@@ -7,13 +7,10 @@ class Roles implements \toHtml
     public $title;
     private $restrict;
     private $admin;
-    public $startPage;
-    public $offset = 5;
-    public $pagesNum;
-    public $currentPage;
     private $messagesClass;
     private $userInfoClass;
     public $users = [];
+    public $usersJson;
     public $successEditedRole;
     public $allRoles = [];
     private $validateErrors = [];
@@ -21,12 +18,11 @@ class Roles implements \toHtml
     public $permsForRole = [];
     private $permsForRoleClass;
 
-
     public function __construct()
     {
         $this->restrict = new \Model\Includes\Restrict();
         $this->restrict->restrictByRole('edit_roles', 'modify_roles');
-        if ( isset($_POST['assign_role']) ) {
+        if (isset($_POST['assign_role'])) {
             header('Location: ' . BASE_URL . 'edit');
         }
         $this->userInfoClass = new \Model\Includes\userInfo();
@@ -52,13 +48,18 @@ class Roles implements \toHtml
         /** extract */
         $this->fields = extractFields($_POST, $neededFieldsArray);
 
-        $roleName = htmlspecialchars(trim($_POST["role_name"]));
-        $rolePerm = $_POST["add_new_role_perms"] ?? [];
-        $this->validateErrors = $this->admin->validateNewRole($rolePerm, $roleName);
+        $roleName = htmlspecialchars(trim($this->fields["role_name"]));
+        $rolePerms = (array)$_POST["add_new_role_perms"];
+        $secureRolePerms = [];
+        foreach ($rolePerms as $perm) {
+            $secureRolePerms[] = htmlspecialchars($perm);
+        }
+        $this->validateErrors = $_POST ? $this->admin->validateNewRole($secureRolePerms, $roleName) : [];
 
         if (isset($_POST["add_role_action"]) && empty($this->validateErrors)) {
-            $permissions = (array)$_POST["add_new_role_perms"];
+            $permissions = $_POST["add_new_role_perms"];
             $this->admin->setNewRole($roleName, $permissions);
+            $this->fields['role_name'] = '';
         }
     }
 
@@ -69,17 +70,8 @@ class Roles implements \toHtml
 
     public function getAllUsersAction() : void
     {
-        $this->startPage = 1;
-        $this->pagesNum = 1;
-        $this->currentPage = (int) $this->messagesClass->validatePage($_GET['page']);
-
-        /** get all users */
-        $this->users = $this->admin->getUsers(
-            $this->offset,
-            $this->currentPage,
-            $this->pagesNum,
-            $this->userInfoClass->userInfoData['username']
-        );
+        $this->users = $this->admin->getUsers($this->userInfoClass->userInfoData['username']);
+        $this->usersJson = json_encode($this->users);
     }
 
     public function AdminChangeUsersAction(): void
@@ -116,10 +108,8 @@ class Roles implements \toHtml
     public function toHtml(): void
     {
         $title = $this->title;
-        $startPage = $this->startPage;
-        $offset = $this->offset;
-        $pagesNum = $this->pagesNum;
         $users = $this->users;
+        $usersJson = $this->usersJson;
         $successEditedRole = $this->successEditedRole;
         $allRoles = $this->allRoles;
         $validateErrors = $this->validateErrors;

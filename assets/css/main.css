@@ -100,7 +100,7 @@ ul>li {
 	border-radius: 7px;
 }
 
-.list-group-item-roles {
+.list-group-item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -181,4 +181,10 @@ ul>li {
 .pagination-pages-list {
 	margin: 0;
 	padding: 0;
+}
+
+.control-panel-item-right {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
 }

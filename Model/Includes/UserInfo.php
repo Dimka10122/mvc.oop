@@ -12,7 +12,6 @@ class UserInfo
 
     public function __construct()
     {
-
         $this->db = new \Core\DB;
         $this->connect = $this->db->connect;
 
@@ -22,7 +21,7 @@ class UserInfo
 
     public function setUserData()
     {
-        $this->userInfoData = (array) json_decode($_COOKIE['user_info']) ?? [];
+        $this->userInfoData = (array)json_decode($_COOKIE['user_info']) ?? [];
         $secureUserInfoData = [];
         foreach ($this->userInfoData as $key => $value) {
             $secureUserInfoData[$key] = htmlspecialchars($value);
@@ -46,7 +45,7 @@ class UserInfo
             if ($_SESSION["is_user_view"] == 'LOGGED') {
                 return;
             }
-            if (!($_SESSION["is_user_view"])) {
+            if (!$_SESSION["is_user_view"]) {
                 $sql = "INSERT INTO visits (visit_time) VALUES (NOW())";
                 $query = $this->connect->prepare($sql);
                 $query->execute();

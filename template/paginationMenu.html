@@ -1,0 +1,9 @@
+<div class="navigation-block">
+    <div class="form-paginator">
+        <a class="nav-btn-link" data-bind="visible: showPrevLink, click: prevPage"><</a>
+        <ul class="pagination-pages-list" data-bind="foreach: pagesCountArray">
+            <li class="btn btn-primary nav-btn" data-bind="text: $data, click: $parent.switchPage.bind($parent)"></li>
+        </ul>
+        <a class="nav-btn-link" data-bind="visible: showNextLink, click: nextPage">></a>
+    </div>
+</div>
