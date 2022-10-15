@@ -1,0 +1,98 @@
+Chat List|Chatky lista
+Message id|Nomera
+User Name|Nazvesko
+Title|Zagolovko
+Message|Poviadomlenia
+Created At|Stvoreno
+Message length must be not less than 2 characters!|Długość wiadomości nie może być mniejsza niż 2 znaki!
+Name must be from 2 to 140 chars!|Imię musi mieć od 2 do 140 znaków!
+Title must be from 10 to 140 chars!|Tytuł musi mieć od 10 do 140 znaków!
+Username be from 3 to 30 chars!|Nazwa użytkownika może mieć od 3 do 30 znaków!
+Password be from 5 to 30 chars!|Hasło może mieć od 5 do 30 znaków!
+Enter correct email!|Wpisz poprawny adres e-mail!
+Passwords do not match!|Hasła nie pasują do siebie!
+User with this username already exists|Użytownik z tą nazwą już istnieje
+User with this email already exists|Użytkownik z tym adresem email już istnieje
+Add message|Dodaj wiadomość
+Delete|Usuwać
+Edit|Edytować
+Save|Ratować
+Cancel|Anulować
+Delete message|Usuń wiadomość
+Are you sure?|Jesteś pewny?
+Edit message|Edytuj wiadomość
+Home|Dom
+Add|Dodać
+Contacts|Kontakty
+Not Exists|Nie istnieje
+Login|Zaloguj sie
+Register|Zarejestrować
+Username|Nazwa użytkownika
+Email|E-mail
+User email|E-mail
+Password|Hasło
+Repeat password|Powtórz hasło
+Go to main page|Przejdź do strony głównej
+Oleny Kul'chyts'koi St, 3/5, Ternopil, Ternopil Oblast, 46002|Oleny Kul'chyts'koi St, 3/5, Ternopil, Ternopil Oblast, 46002
+Restrict|Ograniczenie
+Role|Rola
+Edit user|Edytuj użytkownika
+User id|Identyfikator
+Id|Identyfikator
+Stats|Statystyki
+Statistics|Statystyka
+Block|Blok
+Rise up requests|Podnieś prośby
+Pages|Strony
+Create|Tworzyć
+Create Page|Tworzyć Strony
+Control|Kontrola
+Control Pages|Kontrola Strony
+Log Out|Wyloguj
+You want to sign out,|Chcesz się wylogować,,
+Apply|Stosować
+Visits|Odwiedziny
+Password Errors|Błędy hasła
+Today|Dziś
+Month|Miesiąc
+Year|Rok
+Select Option|Wybierz opcję
+Date|Data
+Block users|Zablokowani użytkownicy
+Block Users|Zablokowani użytkownicy
+Rise Users|Wzrost użytkowników
+Roles page|Strona z rolami
+Role name|Nazwa roli
+Role Name|Nazwa roli
+Add Roles|Dodaj role
+Add Role|Dodaj rolę
+Permissions|Uprawnienia
+Delete Messages|Usuń wiadomości
+Edit Messages|Edytuj wiadomości
+Add Messages|Dodaj wiadomości
+Modify Roles|Modyfikuj role
+Modify Role|Modyfikuj role
+Edit Roles|Edytuj role
+Ask for a rise|Poproś o podwyżkę
+Admin terminal|Terminal administracyjny
+Admin Terminal|Terminal administracyjny
+Request Role|Poproś o rolę
+Upgrade User Roles|Uaktualnij role użytkownika
+Accepted|Przyjęty
+Rejected|Odrzucony
+In Process|W trakcie
+Your request in processing|Twoja prośba w trakcie przetwarzania
+Access|Dostęp
+Deny|Zaprzeczyć
+Request State|Stan żądania
+Title|Tytuł
+Url|Url
+Enter the login and email of the lost account. We will send you a password reset code to the specified email.|Wprowadź login i adres e-mail utraconego konta. Na podany adres e-mail wyślemy kod resetowania hasła.
+Get code|Zdobądź szyfr
+Forgot Password|Zapomniałeś hasła
+Remember Me|Zapamiętaj mnie
+About MVC|O MVC
+Action|Akcja
+Name|Nazwa
+User with this username does not exist|Użytkownik o tej nazwie nie istnieje
+Wrong Password|Błędne hasło

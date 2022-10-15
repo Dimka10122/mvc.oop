@@ -1,0 +1,135 @@
+Chat List|Чат Список
+Message id|Номер Листа
+User Name|Ім`я користувача
+Name|Назва
+Title|Заголовок
+Message|Повідомлення
+Created At|Дата створення
+Message length must be not less then 2 characters!|Повідомлення має містити мінімум 2 символи!
+Name must be from 2 to 140 chars!|Ім`я має бути від 2 до 140 символів!
+Title must be from 10 to 140 chars!|Заголовок має бути від 10 до 140 символів!
+Username be from 3 to 30 chars!|Ім`я має бути від 3 до 30 символів!
+Password be from 5 to 30 chars!|Пароль має бути від 5 до 30 символів!
+Enter correct email|Введіть коректну пошту
+Passwords do not match!|Паролі не співпадають!
+User with this username already exists|Користувач із цим іменем вже існує
+User with this email already exists|Користувач із цією поштою вже існує
+Add message|Додати повідомлення
+Delete|Видалити
+Edit|Редагувати
+Save|Зберегти
+Cancel|Скасувати
+Delete message|Видалити повідомлення
+Are you sure?|Ви впевнені?
+Edit message|Редагувати повідомлення
+Home|Головна
+Add|Додати
+Contacts|Контакти
+Not Exists|Тут нічого нема
+Login|Вхід
+Register|Реєстрація
+Username|Ім`я користувача
+Email|Пошта
+User email|Пошта
+Password|Пароль
+Repeat password|Повторіть пароль
+Go to main page|На головну
+Oleny Kul'chyts'koi St, 3/5, Ternopil, Ternopil Oblast, 46002|вул. Олени Кульчицької, 3/5, Тернопіль, Тернопільська область, 46002
+Restrict|Обмеження
+Role|Роль
+Edit user|Редагувати користувача
+User id|Ідентифікатор
+Id|Ідентифікатор
+Stats|Статистика
+Block|Заблоковані
+Rise up requests|Підвищення
+Pages|Сторінки
+Create|Створити
+Create Page|Створити сторінку
+Control|Контролювати
+Control Pages|Контролювати сторінки
+Log Out|Вихід
+You want to sign out,| Ви бажаєте вийти,
+Apply|Підтвердити
+Visits|Візити
+Password Errors|Помилки в паролі
+Today|Сьогодні
+Month|За місяць
+Year|За рік
+Statistics|Статистика
+Select Option|Вибрати опцію
+Date|Дата
+Block users|Блокування користувачів
+Block Users|Блокування користувачів
+Rise Users|Підвищувати користувачів
+Roles page|Сторінка ролів
+Role name|Назва ролі
+Role Name|Назва ролі
+Add Role|Додати роль
+Permissions|Дозволи
+Delete Messages|Видалення повідомлень
+Edit Messages|Редагувати повідомлення
+Add Messages|Додавати повідомлення
+Add Roles|Додавати ролі
+Modify Roles|Модифікувати ролі
+Modify Role|Модифікувати роль
+Edit Roles|Редагувати ролі
+Ask for a rise|Запит на підвищення
+Admin terminal|Термінал адміна
+Admin Terminal|Термінал адміна
+Request Role|Запит на роль
+Upgrade User Roles|Підвищити роль користувачів
+Accept|Прийняти
+Reject|Відхилити
+Accepted|Прийнято
+Rejected|Відхилено
+In Process|В процесі
+Your request in processing|Ваш запит в обробці
+Access|Прийняти
+Deny|Відхилити
+Request State|Стан запиту
+Title|Заголовок
+Url|Посилання
+Enter the login and email of the lost account. We will send you a password reset code to the specified email.|Введіть логін або електронну пошту втраченого акаунту. Ми надішлемо вам на пошту лист з підтвердженням для відновлення паролю.
+Get code|Отримати код
+Forgot Password|Забув пароль
+Remember Me|Запам'ятати
+About MVC|Про MVC
+User with this username does not exist|Користувача з таким іменем не існує
+Wrong Password|Хибний пароль
+Assign Roles|Застосувати ролі
+Select Role|Вибрати роль
+Select the desired role|Виберіть бажану роль
+You cannot delete your current role|Ви не можете видалити свою поточну роль
+You cannot delete Admin role|Ви не можете видалити роль Admin
+You cannot delete User role|Ви не можете видалити роль User
+Action|Дія
+You have successfully registered! Let's Log In|Ви успішно зареєструвалися! Тепер можете увійти у свій кабінет
+You have successfully changed password! Let's Log In|Ви успішно змінили пароль! Тепер можете увійти у свій кабінет
+We have send you a reboot code to the specified email. Enter it above|Ми надіслали вам код перезавантаження на вказану електронну адресу. Введіть його вище
+Reboot Code|Код перезавантаження
+Confirm|Підтвердити
+Change Password|Змінити пароль
+Enter your new password above|Введіть свій новий пароль вище
+New password|Новий пароль
+Repeat new password|Повторіть новий пароль
+Set new password|Встановити новий пароль
+Role name must be from 3 to 30 chars!|Назва ролі має містити від 3 до 30 символів!
+Select at least one permission|Виберіть принаймні один дозвіл
+Role with this name already exists|Роль з таким іменем вже існує
+Edit user role|Редагувати роль користувача
+Change User Role|Змінити роль
+User with this email does not exist|Користувача з цією електронною адресою не існує
+This is the Admin. You can not block Admin|Це адмін. Ви не можете заблокувати адміністратора
+Choose real date|Оберіть справжню дату
+You cannot change the role to a superior or equal to you|Ви не можете змінити роль користувача вищого або рівного вам
+You cannot change the admin role|Ви не можете змінити роль адміністратора
+Invalid role. Check Roles table|Недійсна роль. Перевірте таблицю ролей
+The text cannot exceed more than 20,000 characters|Текст не може перевищувати 20 000 символів
+Author|Автор
+Message length must be not less then 5 characters!|Довжина повідомлення має бути не менше 5 символів!
+The message has been successfully edited!|Повідомлення успішно відредаговано!
+Choose at least 2 permissions|Виберіть принаймні 2 дозволи
+Role name length must be not less then 4 characters!|Довжина імені ролі має бути не менше 4 символів!
+You cannot modify Admin role|Ви не можете модифікувати роль Admin
+You cannot change Admin role|Ви не можете змінити роль Адміна

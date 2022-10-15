@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c1ffe98b-fb6e-43a7-8986-dc207e337e51" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Controller/Pages/CreatePage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controller/Pages/DeletePage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controller/Pages/EditPage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/View/Pages/v_pages_list.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/routes.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectId" id="2C45rHxiMPbfw3j3yMEFUTq6cMs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "14.15.4",
+    "javascript.nodejs.core.library.typings.version": "14.18.32",
+    "last_opened_file_path": "D:/OpenServer/domains/mvc.oop",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\mvc.oop\assets\js\scripts" />
+      <recent name="C:\OpenServer\domains\mvc.oop\Api" />
+      <recent name="C:\OpenServer\domains\mvc.oop\Controller\Pages" />
+      <recent name="C:\OpenServer\domains\mvc.oop\View\Pages" />
+      <recent name="C:\OpenServer\domains\mvc.oop\View\Rise" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\mvc.oop" />
+      <recent name="C:\OpenServer\domains\mvc.oop\assets\js\scripts\lib" />
+      <recent name="C:\OpenServer\domains\mvc.oop\assets\js\scripts" />
+      <recent name="C:\OpenServer\domains\mvc.oop\assets\js\includes" />
+      <recent name="D:\OpenServer\domains\mvc.oop\Model\Includes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="UserInfo.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/Model/Includes/UserInfo.php">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1ffe98b-fb6e-43a7-8986-dc207e337e51" name="Changes" comment="" />
+      <created>1658049213713</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658049213713</updated>
+      <workItem from="1658049214839" duration="6085000" />
+      <workItem from="1658172841167" duration="5385000" />
+      <workItem from="1658741330260" duration="2000" />
+      <workItem from="1658753698836" duration="654000" />
+      <workItem from="1659026444141" duration="10314000" />
+      <workItem from="1659077928302" duration="9618000" />
+      <workItem from="1659202002890" duration="6835000" />
+      <workItem from="1659276947701" duration="7523000" />
+      <workItem from="1659340761125" duration="6107000" />
+      <workItem from="1659379937190" duration="5529000" />
+      <workItem from="1659623019152" duration="8899000" />
+      <workItem from="1659800919412" duration="683000" />
+      <workItem from="1660404374002" duration="8027000" />
+      <workItem from="1660460257325" duration="3000" />
+      <workItem from="1660491679723" duration="1685000" />
+      <workItem from="1660501186535" duration="2865000" />
+      <workItem from="1660551791368" duration="3809000" />
+      <workItem from="1660720170910" duration="743000" />
+      <workItem from="1660833285410" duration="11092000" />
+      <workItem from="1660890933487" duration="7343000" />
+      <workItem from="1661015639798" duration="8949000" />
+      <workItem from="1661362484372" duration="5276000" />
+      <workItem from="1661405362041" duration="2974000" />
+      <workItem from="1661417059570" duration="4728000" />
+      <workItem from="1661435634017" duration="1192000" />
+      <workItem from="1661529152050" duration="11532000" />
+      <workItem from="1661581285866" duration="1601000" />
+      <workItem from="1661621325484" duration="2232000" />
+      <workItem from="1661623603287" duration="3364000" />
+      <workItem from="1661678379296" duration="5838000" />
+      <workItem from="1661953947493" duration="3685000" />
+      <workItem from="1662113655080" duration="5392000" />
+      <workItem from="1662129692020" duration="535000" />
+      <workItem from="1662466034158" duration="2831000" />
+      <workItem from="1662721888025" duration="9146000" />
+      <workItem from="1662990911197" duration="3884000" />
+      <workItem from="1663075084459" duration="7055000" />
+      <workItem from="1663150328911" duration="3083000" />
+      <workItem from="1663442982848" duration="690000" />
+      <workItem from="1663443680218" duration="3453000" />
+      <workItem from="1663524925387" duration="5488000" />
+      <workItem from="1663611667218" duration="6154000" />
+      <workItem from="1663649583533" duration="680000" />
+      <workItem from="1663651440804" duration="7064000" />
+      <workItem from="1664170257809" duration="14667000" />
+      <workItem from="1664217678395" duration="7822000" />
+      <workItem from="1664254971948" duration="7578000" />
+      <workItem from="1664286114244" duration="10078000" />
+      <workItem from="1664359784050" duration="7968000" />
+      <workItem from="1664450852025" duration="711000" />
+      <workItem from="1664452558872" duration="4169000" />
+      <workItem from="1664461031104" duration="6175000" />
+      <workItem from="1664542260276" duration="2728000" />
+      <workItem from="1664698062058" duration="41000" />
+      <workItem from="1664703435770" duration="3541000" />
+      <workItem from="1664717132129" duration="5644000" />
+      <workItem from="1665044374985" duration="15538000" />
+      <workItem from="1665141845678" duration="615000" />
+      <workItem from="1665143843679" duration="1211000" />
+      <workItem from="1665231006305" duration="3575000" />
+      <workItem from="1665410781017" duration="4224000" />
+      <workItem from="1665471280925" duration="6081000" />
+      <workItem from="1665571177657" duration="3157000" />
+      <workItem from="1665817392458" duration="1368000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/scripts/modulesTest/pagination.js</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

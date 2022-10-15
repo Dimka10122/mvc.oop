@@ -1,0 +1,24 @@
+{
+  "name": "dima/mvc.oop",
+  "type": "project",
+  "description": "best project",
+  "minimum-stability": "stable",
+  "license": "OSL-3.0",
+  "authors": [
+    {
+      "name": "Dima",
+      "email": "dmitro.getsko@gmail.com"
+    }
+  ],
+  "version": "1.0.0",
+  "autoload": {
+    "psr-0": {
+      "": [
+        "app/code/"
+      ]
+    }
+  },
+  "require": {
+    "php": ">=7.3"
+  }
+}
