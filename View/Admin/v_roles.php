@@ -110,8 +110,8 @@ if ($userInfo->canUser('add_roles')) :?>
             <option name="controller_field" value="<?=$role['id']?>"><?=__($role['role_name'])?></option>
         <?php endforeach;?>
     </select>
-    <ul class="list-group" data-bind="foreach: currentItems">
-        <li class="list-group-item">
+    <ul class="list-group" data-bind="foreach: paginationViewModel.currentItems">
+        <li class="list-group-item" data-bind="visible: $parent.paginationViewModel.isVisibleItem($data)">
             <div class="list-group-item-user-info">
                 <label><strong><?= __('User email') ?>:</strong></label> <em data-bind="text: email"></em><br>
                 <label><strong><?= __('Login') ?>:</strong></label> <em data-bind="text: login"></em><br>
@@ -125,14 +125,26 @@ if ($userInfo->canUser('add_roles')) :?>
                 <input class="controller-select-field"
                        type="checkbox"
                        name="user-info-select[]"
-                       data-bind="attr: {'value': id + '_' + role}">
+                       data-bind="attr: {'value': id + '_' + role}, checked: $root.dropdownViewModel.isSelectedItem(id), click: $root.dropdownViewModel.selectItem(id)">
             </div>
         </li>
     </ul>
+    <?php include 'template/paginationMenu.php';?>
+    <div data-bind="if: paginationViewModel.currentItems().length == 0">
+        <div class="alert alert-info" role="alert">
+            <?= __('There is no messages!') ?>
+        </div>
+    </div>
 </form>
 
-<?php include 'template/paginationMenu.php';?>
 
+
+<script>
+    require(['assets/js/scripts/koInit'], function (koInit) {
+        koInit(<?=$usersJson?>);
+        console.log(<?=$usersJson?>)
+    });
+</script>
 <!--<script src="assets/js/scripts/modules/select.js"></script>-->
 
 
