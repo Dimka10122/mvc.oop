@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1ffe98b-fb6e-43a7-8986-dc207e337e51" name="Changes" comment="" />
+    <list default="true" id="c1ffe98b-fb6e-43a7-8986-dc207e337e51" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/xml/routes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Admin/Roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Admin/Roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/system.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Authorize.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Authorize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="ComposerSettings" doNotAsk="true" notifyAboutMissingVendor="false">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -63,11 +74,11 @@
       <recent name="C:\OpenServer\domains\mvc.oop\View\Rise" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\mvc.oop\assets\xml" />
+      <recent name="D:\OpenServer\domains\mvc.oop\assets" />
       <recent name="D:\OpenServer\domains\mvc.oop" />
       <recent name="C:\OpenServer\domains\mvc.oop\assets\js\scripts\lib" />
       <recent name="C:\OpenServer\domains\mvc.oop\assets\js\scripts" />
-      <recent name="C:\OpenServer\domains\mvc.oop\assets\js\includes" />
-      <recent name="D:\OpenServer\domains\mvc.oop\Model\Includes" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,6 +158,8 @@
       <workItem from="1665471280925" duration="6081000" />
       <workItem from="1665571177657" duration="3157000" />
       <workItem from="1665817392458" duration="1857000" />
+      <workItem from="1665820405823" duration="10448000" />
+      <workItem from="1665911716833" duration="625000" />
     </task>
     <servers />
   </component>
@@ -163,17 +176,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assets/js/scripts/modulesTest/pagination.js</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

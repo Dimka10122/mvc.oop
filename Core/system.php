@@ -7,31 +7,40 @@ declare(strict_types=1);
 
 /**
  * @param string $url
- * @param array $routes
+ * @param object $routes xml
  * @return array
  */
-function parseUrl(string $url, array $routes) : array{
+function parseUrl(string $url, object $routes) : array{
     $result = [
         'controller' => 'errors/e404',
         'params' => []
     ];
 
-    foreach($routes as $route){
-        $matches = [];
-        if (preg_match($route['regex'], $url, $matches)){
-            $result['controller'] = $route['controller'];
+    $jsonRoutes = json_encode($routes);
+    $parsedRoutes = json_decode($jsonRoutes, true);
 
-            if( isset($route['params'])){
-                foreach($route['params'] as $name => $num){
-                    $result['params'][$name] = $matches[$num];
-                    if ($matches[$num] > 999999999) {
-                        header('Location: ' . HOST . BASE_URL . 'error404');
-                        exit();
+    foreach ($parsedRoutes as $route) {
+        for ($i = 0; $i < count($route); $i++) {
+            $allKeys = array_keys($route);
+            $routeName = $allKeys[$i];
+
+            $matches = [];
+
+            if (preg_match($route[$routeName]['regex'], $url, $matches)) {
+                $result['controller'] = $route[$routeName]['controller'];
+
+                if (isset($route[$routeName]['params'])) {
+                    foreach($route[$routeName]['params'] as $name => $num){
+                        $result['params'][$name] = $matches[$num];
+                        if ($matches[$num] > 999999999) {
+                            header('Location: ' . HOST . BASE_URL . 'error404');
+                            exit();
+                        }
                     }
                 }
-            }
 
-            break;
+                break;
+            }
         }
     }
 

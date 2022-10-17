@@ -135,7 +135,11 @@ class Authorize
     {
         $rebootCode = "";
         for ($i = 1; $i <= 6; $i++) {
-            $rebootCode .= random_int(0, 9);
+            try {
+                $rebootCode .= random_int(0, 9);
+            } catch (\Exception $e) {
+                echo $e;
+            }
         }
 
         return $rebootCode;

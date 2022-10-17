@@ -20,7 +20,7 @@ class Messages
 
     public function getAllMessages(): array
     {
-        $sql = "SELECT * FROM messages";
+        $sql = "SELECT * FROM messages ORDER BY id DESC";
         $query = $this->connect->prepare($sql);
         $query->execute();
 

@@ -219,16 +219,6 @@ class Admin
         $query->bindParam(':role_id', $roleId, PDO::PARAM_INT);
         $query->execute();
     }
-//     public function updateRole(string $roleId, string $roleName, array $rolePerms): void
-//     {
-//         $jsonPerms = json_encode($rolePerms);
-//         $sql = "UPDATE roles SET role_name = :role_name, permissions = :perms WHERE id = :role_id";
-//         $query = $this->connect->prepare($sql);
-//         $query->bindParam(':role_name', $roleName);
-//         $query->bindParam(':perms', $jsonPerms);
-//         $query->bindParam(':role_id', $roleId, PDO::PARAM_INT);
-//         $query->execute();
-//     }
 
     public function DeleteRole(int $id): bool
     {
