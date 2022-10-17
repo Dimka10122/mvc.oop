@@ -19,7 +19,6 @@ $badUrl = BASE_URL . 'index.php';
 if (strpos($uri, $badUrl) === 0){
     $cname = 'errors/e404';
 } else {
-
     /** get xml data */
     $xml = simplexml_load_file('./assets/xml/routes.xml');
     $routes = $xml->children();
@@ -27,8 +26,6 @@ if (strpos($uri, $badUrl) === 0){
     $url = $_GET['mvcsystemurl'] ?? '';
 
     $routerRes = parseUrl($url, $routes);
-
-    var_dump($routerRes);
 
     $cname = $routerRes['controller'];
 

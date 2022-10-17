@@ -95,7 +95,10 @@
         </changeRises>
     </rise>
     <block>
-
+        <main>
+            <regex>/^block_users\/?$/</regex>
+            <controller>Admin/BlockUsers</controller>
+        </main>
     </block>
     <other>
         <cli>

@@ -16,8 +16,8 @@ include 'template/selectMenu.php';
 ?>
 
 <form action="" method="POST">
-    <ul class="list-group" data-bind="foreach: currentItems">
-        <li class="list-group-item-roles list-group-item">
+    <ul class="list-group" data-bind="foreach: paginationViewModel.currentItems">
+        <li class="list-group-item-roles list-group-item" data-bind="visible: $parent.paginationViewModel.isVisibleItem($data)">
             <div class="list-group-item-user-info">
                 <label><strong><?= __('Username') ?>:</strong></label><em data-bind="text: login"></em><br>
                 <label><strong><?= __('Request Role') ?>:</strong></label><em data-bind="text: request_role"></em><br>
@@ -29,11 +29,16 @@ include 'template/selectMenu.php';
                 <input class="controller-select-field"
                        type="checkbox"
                        name="user-info-select[]"
-                       data-bind="attr: {'value': id}">
+                       data-bind="attr: {'value': id}, checked: $root.dropdownViewModel.isSelectedItem(id), click: $root.dropdownViewModel.selectItem(id)">
             </div>
         </li>
     </ul>
     <?php include 'template/paginationMenu.php';?>
+    <div data-bind="if: paginationViewModel.currentItems().length == 0">
+        <div class="alert alert-info" role="alert">
+            <?= __('There is no messages!') ?>
+        </div>
+    </div>
 </form>
 
 

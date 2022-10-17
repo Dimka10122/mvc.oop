@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c1ffe98b-fb6e-43a7-8986-dc207e337e51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/v_roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/v_roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Admin/Roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Admin/Roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Rise/v_change_rises.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Rise/v_change_rises.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/xml/routes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/assets/xml/routes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +69,11 @@
       <recent name="C:\OpenServer\domains\mvc.oop\View\Rise" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OpenServer\domains\mvc.oop\langs" />
       <recent name="D:\OpenServer\domains\mvc.oop\assets\xml" />
       <recent name="D:\OpenServer\domains\mvc.oop\assets" />
       <recent name="D:\OpenServer\domains\mvc.oop" />
       <recent name="C:\OpenServer\domains\mvc.oop\assets\js\scripts\lib" />
-      <recent name="C:\OpenServer\domains\mvc.oop\assets\js\scripts" />
     </key>
   </component>
   <component name="RunManager">
@@ -152,7 +155,7 @@
       <workItem from="1665817392458" duration="1857000" />
       <workItem from="1665820405823" duration="10448000" />
       <workItem from="1665911716833" duration="625000" />
-      <workItem from="1666015446225" duration="653000" />
+      <workItem from="1666015446225" duration="3245000" />
     </task>
     <servers />
   </component>

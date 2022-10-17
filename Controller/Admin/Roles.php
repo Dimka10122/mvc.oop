@@ -92,7 +92,6 @@ class Roles implements ToHtmlInterface, CheckSessionLogsInterface
         if (isset($_POST['select-action'])) {
             $selectedUsers = $_POST["user-info-select"] ?? [];
             $selectedRole = (int)htmlspecialchars(trim($_POST["select-role-for-users"]));
-            var_dump($selectedRole);
             $controllerField = htmlspecialchars($_POST['change_user_controller']);
 
             switch ($controllerField) {
