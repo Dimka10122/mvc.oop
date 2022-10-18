@@ -4,11 +4,9 @@ define([
     'assets/js/scripts/modules/dropdown'
 ], function (ko, pagination, dropdown) {
     return function (items) {
-        let actions = ['Select All', 'Unselect All', 'Select This Page', 'Unselect This Page'];
-
         let globalViewModel = {
+            dropdownViewModel: dropdown(),
             paginationViewModel: pagination(items),
-            dropdownViewModel: dropdown(actions),
         };
 
         ko.applyBindings(globalViewModel);

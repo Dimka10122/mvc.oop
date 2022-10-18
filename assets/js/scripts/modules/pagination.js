@@ -14,6 +14,22 @@ define(['assets/js/scripts/lib/knockout'], function (ko) {
                 }
                 viewModel.currentPage(viewModel.currentPage() + 1);
             },
+            // getAction: function (action) {
+            //     switch (action) {
+            //         case 'Select All' || 'Unselect All':
+            //             viewModel.allItems().forEach(item => {
+            //                 return true;
+            //             })
+            //             break;
+            //         case 'Select This Page' || 'Unselect This Page':
+            //             viewModel.currentItems().forEach(item => {
+            //                 return false;
+            //             })
+            //             break;
+            //         default:
+            //             break;
+            //     }
+            // },
             prevPage: function () {
                 if (viewModel.currentPage() <= 1) {
                     viewModel.currentPage(1);

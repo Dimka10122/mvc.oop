@@ -66,11 +66,14 @@ if ($successEdited): ?>
             </div>
             <?php if ($userInfo->canUser('edit_messages', 'delete_messages')) :?>
                 <div class="list-group-item-select-menu">
-<!--                    <pre data-bind="html: console.log($root.dropdownViewModel)"></pre>-->
                     <input class="controller-select-field"
                            type="checkbox"
                            name="message-info-select[]"
-                           data-bind="attr: {'value': id}, checked: $root.dropdownViewModel.isSelectedItem(id), click: $root.dropdownViewModel.selectItem(id)">
+                           data-bind="
+                               click: $root.dropdownViewModel.selectItem,
+                               attr: {'value': id},
+                               checked: $root.dropdownViewModel.isSelectedItem(id),
+                                html: console.log($root.dropdownViewModel.isSelectedItem(id))">
                 </div>
             <?php endif;?>
         </li>

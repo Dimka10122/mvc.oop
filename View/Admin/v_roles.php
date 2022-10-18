@@ -125,7 +125,10 @@ if ($userInfo->canUser('add_roles')) :?>
                 <input class="controller-select-field"
                        type="checkbox"
                        name="user-info-select[]"
-                       data-bind="attr: {'value': id + '_' + role}, checked: $root.dropdownViewModel.isSelectedItem(id), click: $root.dropdownViewModel.selectItem(id)">
+                       data-bind="
+                            attr: {'value': id + '_' + role},
+                            click: $root.dropdownViewModel.selectItem,
+                            checked: $root.dropdownViewModel.isSelectedItem(id)">
             </div>
         </li>
     </ul>
@@ -137,12 +140,9 @@ if ($userInfo->canUser('add_roles')) :?>
     </div>
 </form>
 
-
-
 <script>
     require(['assets/js/scripts/koInit'], function (koInit) {
         koInit(<?=$usersJson?>);
-        console.log(<?=$usersJson?>)
     });
 </script>
 <!--<script src="assets/js/scripts/modules/select.js"></script>-->

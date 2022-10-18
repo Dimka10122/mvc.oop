@@ -6,7 +6,10 @@
         </a>
         <ul class="pagination-pages-list" data-bind="foreach: paginationViewModel.pagesCountArray">
             <li class="btn btn-primary nav-btn"
-                data-bind="text: $data, click: $parent.paginationViewModel.switchPage, css: {'active-nav-btn': $data == $parent.paginationViewModel.currentPage()}">
+                data-bind="
+                    text: $data,
+                    click: $parent.paginationViewModel.switchPage,
+                    css: {'active-nav-btn': $data == $parent.paginationViewModel.currentPage()}">
             </li>
         </ul>
         <a class="nav-btn-link"

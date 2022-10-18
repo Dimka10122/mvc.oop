@@ -15,7 +15,7 @@ declare(strict_types=1);
 function __(string $string): string
 {
     $ln = $_GET['ln'] ?? false;
-    $file = "en_$ln.csv";
+    $file = "languages" . BASE_URL . "en_$ln.csv";
 
     if ($ln && $_SESSION['ln'] != $ln || !isset($_SESSION['translate'])) {
         if (file_exists($file)) {
@@ -32,7 +32,7 @@ function __(string $string): string
                 return explode("|", $line)[1] ?? $string;
             }
         }
-        //file_put_contents('translate.log', $string.PHP_EOL , FILE_APPEND | LOCK_EX);
+        //file_put_contents('languages'. BASE_URL . 'translate.log', $string.PHP_EOL , FILE_APPEND | LOCK_EX);
     }
 
     return $string;

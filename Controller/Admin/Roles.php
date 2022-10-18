@@ -42,6 +42,7 @@ class Roles implements ToHtmlInterface, CheckSessionLogsInterface
 
         $this->title = __('Roles page');
 
+        $this->checkIfNotHaveToEdit();
         $this->addNewRoleAction();
         $this->getAllRolesAction();
         $this->AdminChangeUsersAction();
@@ -132,6 +133,13 @@ class Roles implements ToHtmlInterface, CheckSessionLogsInterface
                     }
                     break;
                 case 'edit':
+                    $editQueue = [];
+                    foreach ($selectedUsers as $selectedUser) {
+                        $userData = explode('_', $selectedUser);
+                        $userId = $userData[0];
+                        $editQueue[] = $userId;
+                    }
+                    $_SESSION['edit_users'] = $editQueue;
                     break;
                 default:
                     $this->validateErrors[] = 'Choose action';
@@ -161,6 +169,15 @@ class Roles implements ToHtmlInterface, CheckSessionLogsInterface
         }
     }
 
+    private function checkIfNotHaveToEdit()
+    {
+        $editQueue = $_SESSION['edit_users'];
+        if (!empty($editQueue)) {
+            header('Location: ' . HOST . BASE_URL . 'roles' . BASE_URL .
+                'user' . BASE_URL . $editQueue[0] . BASE_URL . 'edit');
+        }
+    }
+
     public function toHtml(): void
     {
         $title = $this->title;
@@ -179,4 +196,5 @@ class Roles implements ToHtmlInterface, CheckSessionLogsInterface
         include('View/Admin/v_roles.php');
         include('View/Base/v_footer.php');
     }
+
 }

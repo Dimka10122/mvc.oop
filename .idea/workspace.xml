@@ -4,9 +4,19 @@
     <list default="true" id="c1ffe98b-fb6e-43a7-8986-dc207e337e51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Admin/Roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Admin/Roles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Rise/v_change_rises.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Rise/v_change_rises.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/xml/routes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/assets/xml/routes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/changeLang.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/changeLang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/v_roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/v_roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Messages/v_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Messages/v_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/scripts/koInit.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scripts/koInit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/scripts/modules/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scripts/modules/dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/scripts/modules/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scripts/modules/pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/scripts/modules/select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/en_pl.csv" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_pl.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en_ua.csv" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_ua.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/paginationMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/paginationMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/selectMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/selectMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translate.log" beforeDir="false" afterPath="$PROJECT_DIR$/languages/translate.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +43,6 @@
     <setting file="file://$PROJECT_DIR$/Controller/Pages/DeletePage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controller/Pages/EditPage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/Pages/v_pages_list.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/routes.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,8 +59,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.15.4&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.18.32&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.17.3&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.17.3&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/OpenServer/domains/mvc.oop&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
@@ -69,11 +78,11 @@
       <recent name="C:\OpenServer\domains\mvc.oop\View\Rise" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\mvc.oop\languages" />
       <recent name="D:\OpenServer\domains\mvc.oop\langs" />
       <recent name="D:\OpenServer\domains\mvc.oop\assets\xml" />
       <recent name="D:\OpenServer\domains\mvc.oop\assets" />
       <recent name="D:\OpenServer\domains\mvc.oop" />
-      <recent name="C:\OpenServer\domains\mvc.oop\assets\js\scripts\lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -156,6 +165,8 @@
       <workItem from="1665820405823" duration="10448000" />
       <workItem from="1665911716833" duration="625000" />
       <workItem from="1666015446225" duration="3245000" />
+      <workItem from="1666076372895" duration="1892000" />
+      <workItem from="1666093989804" duration="2315000" />
     </task>
     <servers />
   </component>

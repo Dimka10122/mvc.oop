@@ -27,9 +27,20 @@
             <div class="dropdown-menu"
                  aria-labelledby="navbarDropdown"
                  data-bind="visible: dropdownViewModel.isActive, foreach: dropdownViewModel.actions">
-                <span class="nav-link dropdown-item" data-bind="text: $data, click: $parent.dropdownViewModel.chooseAction"></span>
+                <span class="nav-link dropdown-item"
+                      data-bind="
+                          text: $data,
+                          click: function(e) {
+                               $parent.dropdownViewModel.chooseAction(e) ?
+                                    $parent.dropdownViewModel.selectMoreItems($parent.paginationViewModel.allItems()) :
+                                    $parent.dropdownViewModel.selectMoreItems($parent.paginationViewModel.currentItems())
+                          }"></span>
             </div>
         </div>
         <button name="select-action" type="submit" class="btn btn-success"><?=__('Apply')?></button>
     </div>
 </div>
+
+<!--$parent.dropdownViewModel.getItems($parent.paginationViewModel.allItems) :-->
+<!--$parent.dropdownViewModel.getItems($parent.paginationViewModel.currentItems),-->
+<!--                         -->
