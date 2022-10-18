@@ -70,10 +70,11 @@ if ($successEdited): ?>
                            type="checkbox"
                            name="message-info-select[]"
                            data-bind="
-                               click: $root.dropdownViewModel.selectItem,
                                attr: {'value': id},
+                               click: $root.dropdownViewModel.selectItem,
                                checked: $root.dropdownViewModel.isSelectedItem(id),
-                                html: console.log($root.dropdownViewModel.isSelectedItem(id))">
+                               html: console.log($root.dropdownViewModel.isSelectedItem(id))
+">
                 </div>
             <?php endif;?>
         </li>

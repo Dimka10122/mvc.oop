@@ -128,8 +128,10 @@ if ($userInfo->canUser('add_roles')) :?>
                        data-bind="
                             attr: {'value': id + '_' + role},
                             click: $root.dropdownViewModel.selectItem,
-                            checked: $root.dropdownViewModel.isSelectedItem(id)">
-            </div>
+                            checked: $root.dropdownViewModel.isSelectedItem(id),
+
+">
+                </div>
         </li>
     </ul>
     <?php include 'template/paginationMenu.php';?>

@@ -3,20 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c1ffe98b-fb6e-43a7-8986-dc207e337e51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Admin/Roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Admin/Roles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/changeLang.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/changeLang.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Admin/v_roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/v_roles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/Messages/v_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Messages/v_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/scripts/koInit.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scripts/koInit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/scripts/modules/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scripts/modules/dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/scripts/modules/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scripts/modules/pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/scripts/modules/select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/en_pl.csv" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_pl.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en_ua.csv" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en_ua.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/paginationMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/paginationMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/selectMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/selectMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translate.log" beforeDir="false" afterPath="$PROJECT_DIR$/languages/translate.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +156,7 @@
       <workItem from="1666015446225" duration="3245000" />
       <workItem from="1666076372895" duration="1892000" />
       <workItem from="1666093989804" duration="2315000" />
+      <workItem from="1666119315728" duration="1674000" />
     </task>
     <servers />
   </component>

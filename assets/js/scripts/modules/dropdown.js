@@ -32,8 +32,7 @@ define(['assets/js/scripts/lib/knockout'], function (ko) {
                 }
             },
             isSelectedItem: function (value) {
-                console.log(value, viewModel.selectedItems().includes(value))
-                return viewModel.selectedItems().includes(value);
+                return this.selectedItems().includes(value);
             },
             selectedItems: ko.observableArray([]),
             selectItem: function ({id}) {
@@ -49,6 +48,7 @@ define(['assets/js/scripts/lib/knockout'], function (ko) {
                 })
             }
         }
+
         return viewModel;
     }
 });
